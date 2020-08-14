@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	  <link rel="stylesheet"  href="bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>to do list </title>
+    <link rel="icon" type="image/png" sizes="32x32" href="logo.png">
+</head>
+<body>
+<div class="row">
+<div class="col-sm-2"></div>
+<div class="task col-sm-8">
+<div class="to-do-header">
+   <img src="to-do.png" width="100px">
+    <h1> to do list</h1>
+   </div>
+   <!-- add task -->
+  <div class="add-task">
+  <input type="text" id="inp_task" >
+  <button type="button" id="add" class="btn btn-info">add</button>
+  <button type="button" id="delete-all" class="btn btn-danger">delete</button> 
+  </div>
+  <!-- all and complete task counter  -->
+   <div class="task-details">
+ <div class="all-task"> 
+ all task <span>0</span>
+ </div>
+   <div class="complete">
+  complete task <span>0</span>
+  </div>
+  </div>
+  <!-- task content -->
+  <div class="task-content">
+  <!-- no task message -->
+ <p class="no-task">no tasks yet.<p>
+
+  </div>
+  
+  
+</div>
+<div class="col-sm-2"></div>
+</div>
+    <script src="main.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+	 <script src="bootstrap.min.js"></script>
+</body>
+</html>
